@@ -1,25 +1,61 @@
-<style>
-    iframe
-    {
-        width: 960;
-        height: 540;
-    }
-    .frame{
-        max-width: fit-content;
-        margin-inline: auto;
-    }
-</style>
-
-<div class="frame">
-    <iframe src="https://html-classic.itch.zone/html/11649285/index.html"></iframe>
-</div>
 <!DOCTYPE html>
 <html>
+<head>
+    <style>
+        iframe {
+            width: 960px;
+            height: 540px;
+        }
+        .frame {
+            max-width: fit-content;
+            margin-inline: auto;
+        }
+        .my-button {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
 <body>
 
-<h1>Abi Commit</h1>
-<p>IDK how to move this shit.</p>
+    <!-- Button to start the game -->
+    <div class="button-group">
+        <button class="my-button" id="StartButton" onclick="start(this);">START GAME</button>
+        <button class="my-button" id="aboutButton" onclick="about(this);">ABOUT</button>
+        <button class="my-button" id="controlButton" onclick="controls(this);">CONTROLS</button>
+    </div>
+
+    <!-- Game frame -->
+    <div class="frame">
+        <iframe id="gameFrame" hidden src="https://html-classic.itch.zone/html/11649285/index.html"></iframe>
+    </div>
+
+    <script>
+        let start = button => {
+            let element = document.getElementById("gameFrame");
+            
+            // Show the game frame after pressing that shit
+            if (element.hasAttribute("hidden")) {
+                element.removeAttribute("hidden");
+            }
+
+            // Hide the button
+            document.getElementById("StartButton").style.display = "none";
+            document.getElementById("aboutButton").style.display = "none";
+            document.getElementById("controlButton").style.display = "none";
+
+        }
+        let about = button => {
+            
+
+
+        }
+        let controls = button => {
+            
+
+
+        }
+    </script>
 
 </body>
 </html>
-
