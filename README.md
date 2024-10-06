@@ -10,8 +10,8 @@
 <p align="center">
   <img src="images/Main Page.png" width="750px" height="400px"/>
   
-  <img src="images/Game.png" width="400px" height="400px"/>
-  <img src="images/Information.png" width="500px" height="400px"/>
+  <img src="images/Game.png" width="350px" height="350px"/>
+  <img src="images/Information.png" width="450px" height="350px"/>
 </p>
 
 [Game Link](https://abinashnagendran.github.io/htv-site/)
