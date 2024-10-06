@@ -2,6 +2,9 @@
 <html>
 <head>
     <style>
+        html {
+            height: 100%;
+        }
         iframe {
             width: 960px;
             height: 540px;
@@ -14,9 +17,58 @@
             display: block;
             margin: 20px auto;
         }
+        .text {
+            text-align: center;
+            margin-top: 120px;
+            color: #ffffff;
+            font-size: 24px;
+        }
+        body {
+            background-image: url(images/Backgroundhtv.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header {
+            background-color: rgb(255, 255, 255);
+            background-position: center;
+            display: flex;      
+            justify-content: center;                  
+            align-items: center; 
+        }
+
+        h1 {
+            color: blue;
+            font-style: italic;
+            font-size: 75px;
+
+        }
+
+        .ongbro {
+            width: 120px;
+            height:auto;
+        }
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+
+            width: 965px;               
+        }
     </style>
 </head>
 <body>
+
+    <div class="container">
+
+        <header>
+            <img class="ongbro" src="images/Sort_It_Out_Logo.png" alt="ongbro">
+            <h1>Sort It Out!</h1>
+        </header>
+    </div>
+
+
+
 
     <!-- Button to start the game -->
     <div class="button-group">
@@ -28,6 +80,23 @@
     <!-- Game frame -->
     <div class="frame">
         <iframe id="gameFrame" hidden src="https://html-classic.itch.zone/html/11649285/index.html"></iframe>
+    </div>
+
+
+    <!-- Game text stuff -->
+    <div id = "gameText"> 
+        <p id="aboutText" hidden class ="text" >This goal of this game is to collect the items falling from the sky in the correct waste bin. 
+            <br>Depending on the item, it either belongs in the trash can or recycling bin.<br>If you get the item in the correct bin, you gain 3 points (accumulated in the top left).
+            <br>If you get the item in the wrong bin, you lose 3 points, so make sure you put the items in the correct bins!<br>If you miss the item, you lose 1 point.</p>
+        <p id="controlText" hidden class ="text">
+            Trash Can:
+            A = Left
+            D = Right
+            
+            <br>Recycle Bin:
+            J = Left
+            L = Right 
+            </p>
     </div>
 
     <script>
@@ -43,16 +112,33 @@
             document.getElementById("StartButton").style.display = "none";
             document.getElementById("aboutButton").style.display = "none";
             document.getElementById("controlButton").style.display = "none";
+            document.getElementById("aboutText").style.display = "none";
+            document.getElementById("controlText").style.display = "none";
 
         }
         let about = button => {
-            
+            let element = document.getElementById("aboutText");
+            if (element.hasAttribute("hidden")) {
+                element.removeAttribute("hidden");
+            }
+            else {
+                element.setAttribute("hidden", "hidden");
+            }
 
+
+            
 
         }
         let controls = button => {
-            
 
+            let element = document.getElementById("controlText");
+            if (element.hasAttribute("hidden")) {
+                element.removeAttribute("hidden");
+            }
+            else {
+                element.setAttribute("hidden", "hidden");
+            }
+        
 
         }
     </script>
