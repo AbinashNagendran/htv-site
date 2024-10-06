@@ -22,6 +22,5 @@
 * [Krish](https://github.com/KR1-SH)
 
 ## Technologies Used
-* HTML
-* CSS
+* HTML/CSS
 * JavaScript
