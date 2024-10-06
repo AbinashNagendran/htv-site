@@ -8,13 +8,20 @@
 </div>
 
 <p align="center">
-  <img src="images/Main Page.png" width="300px" height="300px"/>
+  <img src="images/Main Page.png" width="500px" height="500px"/>
 </p>
 
 ## Features
-
+* **Interactive Buttons:** Buttons on the website to start the game, learn about it or figure out the controls.
+* **Accurate Score Keeping:** The game keeps track of the user's score accurately. 
 
 ##Contributors
-
+* [Krish](https://github.com/the-kido)
+* [Abinash](https://github.com/AbinashNagendran)
+* [Akshayan](https://github.com/Akkipr)
+* [Krish](https://github.com/KR1-SH)
 
 ## Technologies Used
+* HTML
+* CSS
+* JavaScript
