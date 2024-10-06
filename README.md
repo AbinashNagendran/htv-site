@@ -11,16 +11,20 @@
   <img src="images/Main Page.png" width="750px" height="400px"/>
 </p>
 
+[Game Link](https://abinashnagendran.github.io/htv-site/)
+
 ## Features
 * **Interactive Buttons:** Buttons on the website to start the game, learn about it or figure out the controls.
 * **Accurate Score Keeping:** The game keeps track of the user's score accurately. 
 
 ## Contributors
-* [Krish](https://github.com/the-kido)
-* [Abinash](https://github.com/AbinashNagendran)
-* [Akshayan](https://github.com/Akkipr)
-* [Krish](https://github.com/KR1-SH)
+* [Krish (@the-kido)](https://github.com/the-kido)
+* [Abinash (@AbinashNagendran)](https://github.com/AbinashNagendran)
+* [Akshayan (@Akkipr)](https://github.com/Akkipr)
+* [Krish (@KR1-SH)](https://github.com/KR1-SH)
 
 ## Technologies Used
 * HTML/CSS
 * JavaScript
+* Godot
+  * [Game Repository](https://github.com/the-kido/htv-game)
